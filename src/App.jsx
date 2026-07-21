@@ -27,7 +27,7 @@ export default function App() {
     <>
       {/* Loader */}
       <div className={`loader${loaded ? ' hide' : ''}`}>
-        <img src='/images/IH_Logo.png' alt="Interior House" className="loader-logo-img" />
+        <img src='/images/IH_Logo.webp' alt="Interior House" className="loader-logo-img" />
       </div>
 
       <Navbar />
