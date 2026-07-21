@@ -10,10 +10,10 @@ import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+
 export default function App() {
   const [loaded, setLoaded] = useState(false)
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 })
-  const [ringPos, setRingPos] = useState({ x: 0, y: 0 })
+  
 
   // Loader
   useEffect(() => {
@@ -21,26 +21,14 @@ export default function App() {
     return () => clearTimeout(t)
   }, [])
 
-  // Custom cursor
-  useEffect(() => {
-    const move = e => {
-      setCursorPos({ x: e.clientX, y: e.clientY })
-      setTimeout(() => setRingPos({ x: e.clientX, y: e.clientY }), 80)
-    }
-    window.addEventListener('mousemove', move)
-    return () => window.removeEventListener('mousemove', move)
-  }, [])
+  
 
   return (
     <>
       {/* Loader */}
       <div className={`loader${loaded ? ' hide' : ''}`}>
-        <div className="loader-logo">IH</div>
+        <img src='/images/IH_Logo.png' alt="Interior House" className="loader-logo-img" />
       </div>
-
-      {/* Custom cursor */}
-      <div className="cursor" style={{ left: cursorPos.x, top: cursorPos.y }} />
-      <div className="cursor-ring" style={{ left: ringPos.x, top: ringPos.y }} />
 
       <Navbar />
       <Hero />
