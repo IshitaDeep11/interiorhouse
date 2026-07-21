@@ -17,7 +17,7 @@ export default function Contact() {
     e.preventDefault()
     setStatus('sending')
     const payload = {
-      access_key: "YOUR_WEB3FORMS_KEY", // 🔑 Replace with key from https://web3forms.com
+      access_key: "2757f285-d796-420e-8aeb-e3f5838e7ee7", // 🔑 Replace with key from https://web3forms.com
       subject: `🏠 New Interior Enquiry from ${form.name} — ${form.service}`,
       from_name: "Interior House Website",
       replyto: form.email,
@@ -84,7 +84,7 @@ ${form.message}
             </div>
             <div className="contact-item">
               <div className="ci-icon">📸</div>
-              <div><div className="ci-label">Instagram</div><div className="ci-value"><a href="https://instagram.com/interiorhouse" target="_blank" rel="noreferrer">@interiorhouse</a></div></div>
+              <div><div className="ci-label">Instagram</div><div className="ci-value"><a href="https://www.instagram.com/interiorhouse.co.in/" target="_blank" rel="noreferrer">@interiorhouse.co.in</a></div></div>
             </div>
             <div className="contact-item">
               <div className="ci-icon">🕐</div>
