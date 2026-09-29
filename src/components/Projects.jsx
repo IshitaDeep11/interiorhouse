@@ -16,7 +16,7 @@ const projects = [
   },
    { 
     type: 'video', 
-    src: '/images/work2.MP4', 
+    src: '/images/work2(1).MP4', 
     poster: '/images/img2.jpeg', 
     cat: 'Dosa Ville', 
     name: 'DOSA VILLE' 
