@@ -14,6 +14,13 @@ const projects = [
     cat: 'Showcase', 
     name: 'Luxury Work Reel' 
   },
+   { 
+    type: 'video', 
+    src: '/images/work2.MP4', 
+    poster: '/images/img2.jpeg', 
+    cat: 'Dosa Ville', 
+    name: 'DOSA VILLE' 
+  },
 ]
 
 export default function Projects() {
