@@ -16,7 +16,7 @@ const projects = [
   },
    { 
     type: 'video', 
-    src: '/images/work2(1).mp4', 
+    src: 'https://player.cloudinary.com/embed/?cloud_name=ys45qsrx&public_id=work2', 
     poster: '/images/img2.jpeg', 
     cat: 'Dosa Ville', 
     name: 'DOSA VILLE' 
